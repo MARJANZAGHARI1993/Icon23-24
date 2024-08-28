@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MonitoraggioAmbientale>
+    <!-- Definizione delle zone specifiche di Bari Centrale -->
+    <Zone>
+        <ID>1</ID>
+        <Nome>Centro Storico</Nome>
+        <Coordinate>
+            <Latitudine>41.1176</Latitudine>
+            <Longitudine>16.8719</Longitudine>
+        </Coordinate>
+    </Zone>
+    <Zone>
+        <ID>2</ID>
+        <Nome>Zona Universitaria</Nome>
+        <Coordinate>
+            <Latitudine>41.1267</Latitudine>
+            <Longitudine>16.8684</Longitudine>
+        </Coordinate>
+    </Zone>
+    <Zone>
+        <ID>3</ID>
+        <Nome>Fiera del Levante</Nome>
+        <Coordinate>
+            <Latitudine>41.1274</Latitudine>
+            <Longitudine>16.8701</Longitudine>
+        </Coordinate>
+    </Zone>
+
+    <!-- Definizione delle stazioni di monitoraggio a Bari Centrale -->
+    <Stazioni>
+        <Stazione>
+            <ID>2001</ID>
+            <Nome>Stazione Centro Storico</Nome>
+            <ZonaID>1</ZonaID>
+            <Coordinate>
+                <Latitudine>41.1180</Latitudine>
+                <Longitudine>16.8720</Longitudine>
+            </Coordinate>
+            <Sensori>
+                <Sensore>
+                    <Tipo>PM2.5</Tipo>
+                    <Valore>14.2</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>PM10</Tipo>
+                    <Valore>30.5</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>NO2</Tipo>
+                    <Valore>17.8</Valore>
+                </Sensore>
+            </Sensori>
+        </Stazione>
+        <Stazione>
+            <ID>2002</ID>
+            <Nome>Stazione Universitaria</Nome>
+            <ZonaID>2</ZonaID>
+            <Coordinate>
+                <Latitudine>41.1275</Latitudine>
+                <Longitudine>16.8685</Longitudine>
+            </Coordinate>
+            <Sensori>
+                <Sensore>
+                    <Tipo>PM2.5</Tipo>
+                    <Valore>11.7</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>PM10</Tipo>
+                    <Valore>28.9</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>NO2</Tipo>
+                    <Valore>16.3</Valore>
+                </Sensore>
+            </Sensori>
+        </Stazione>
+        <Stazione>
+            <ID>2003</ID>
+            <Nome>Stazione Fiera</Nome>
+            <ZonaID>3</ZonaID>
+            <Coordinate>
+                <Latitudine>41.1270</Latitudine>
+                <Longitudine>16.8705</Longitudine>
+            </Coordinate>
+            <Sensori>
+                <Sensore>
+                    <Tipo>PM2.5</Tipo>
+                    <Valore>13.3</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>PM10</Tipo>
+                    <Valore>27.4</Valore>
+                </Sensore>
+                <Sensore>
+                    <Tipo>NO2</Tipo>
+                    <Valore>18.0</Valore>
+                </Sensore>
+            </Sensori>
+        </Stazione>
+    </Stazioni>
+
+    <!-- Definizione delle misure di qualità dell'aria -->
+    <QualitaAria>
+        <Parametro>
+            <Tipo>PM2.5</Tipo>
+            <SogliaMassima>35</SogliaMassima>
+            <UnitaMisura>µg/m³</UnitaMisura>
+        </Parametro>
+        <Parametro>
+            <Tipo>PM10</Tipo>
+            <SogliaMassima>50</SogliaMassima>
+            <UnitaMisura>µg/m³</UnitaMisura>
+        </Parametro>
+        <Parametro>
+            <Tipo>NO2</Tipo>
+            <SogliaMassima>180</SogliaMassima>
+            <UnitaMisura>µg/m³</UnitaMisura>
+        </Parametro>
+    </QualitaAria>
+
+    <!-- Definizione delle azioni correttive -->
+    <AzioniCorrettive>
+        <Azione>
+            <Tipo>Allerta</Tipo>
+            <Descrizione>Superamento della soglia di PM2.5 nella zona Centro Storico</Descrizione>
+            <ZonaID>1</ZonaID>
+        </Azione>
+        <Azione>
+            <Tipo>Controllo</Tipo>
+            <Descrizione>Verifica della calibrazione dei sensori nella zona Universitaria</Descrizione>
+            <ZonaID>2</ZonaID>
+        </Azione>
+        <Azione>
+            <Tipo>Intervento</Tipo>
+            <Descrizione>Installazione di nuovi filtri per PM10 nella zona Fiera del Levante</Descrizione>
+            <ZonaID>3</ZonaID>
+        </Azione>
+    </AzioniCorrettive>
+</MonitoraggioAmbientale>
