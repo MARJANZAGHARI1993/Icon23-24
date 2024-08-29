@@ -7,6 +7,6 @@ Repository per l'esame di Ingegneria della Conoscenza, a.a. 23-24 - Università 
 
 Studenti:
 
-Zagharitafreshi Marjan 704820   m.zagharitafreshi@studenti.uniba.it
+Zagharitafreshi Marjan , 704820 , m.zagharitafreshi@studenti.uniba.it
 
-Robles Vincenza        728324   v.robles1@studenti.uniba.it
+Robles Vincenza , 728324 , v.robles1@studenti.uniba.it
